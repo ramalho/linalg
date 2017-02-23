@@ -66,7 +66,7 @@ func Dot(v1, v2 []float64) float64 {
 	return result
 }
 
-//SumOfSquares computes the dot product v · v
+//SumOfSquares computes the dot product v·v
 func SumOfSquares(v []float64) float64 {
 	return Dot(v, v)
 }
@@ -81,7 +81,7 @@ func SquaredDistance(v1, v2 []float64) float64 {
 	return SumOfSquares(Sub(v1, v2))
 }
 
-//Distance computes the squared distance of two vectors (used by Distance)
+//Distance computes the distance of two vectors
 func Distance(v1, v2 []float64) float64 {
 	return math.Sqrt(SquaredDistance(v1, v2))
 }
